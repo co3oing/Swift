@@ -62,7 +62,7 @@ Float(birthyear) + height
 String(birthyear) + "년에 태어난" + name + "아 안녕!"
 ```
 
-다른 자료형끼리의 연산은 다음과 같이 한다.
+다른 자료형끼리의 연산은 위와 같이 한다.
 
 ```swift
 "\(birthyear)년에 태어난 \(name)아 안녕!"
