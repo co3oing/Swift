@@ -1,4 +1,6 @@
 # Swift
+[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![XCode](http://img.shields.io/badge/XCode-v.11.5-orange.svg?style=flat)](https://developer.apple.com/xcode/whats-new/)
 
 ## 목차
 

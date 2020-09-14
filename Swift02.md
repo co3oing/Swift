@@ -27,6 +27,8 @@ switch age {
 
 Swift의 `switch` 구문은 패턴 매칭이 가능하여 `8..<14` 와 같이 범위 안에 `age` 가 포함되어있는지 여부를 검사할 수 있다.
 
+## for~in & while & repeat~while
+
 ```swift
 for i in 0..<100 {
 	i
@@ -34,6 +36,8 @@ for i in 0..<100 {
 ```
 
 반복문은 위와 같이 작성한다.
+
+C 스타일의 `for` 구문(초기값, 조건식, 증감값으로 처리되는)은 더 이상 지원되지 않아 `for~in` 구문만 사용 가능하다.
 
 ```swift
 for _ in 0..<100 {
@@ -52,3 +56,13 @@ while i < 100 {
 
 `while` 은 조건문의 값이 `true`일 때 계속 반복한다.
 
+```swift
+var n = 1024
+repeat {
+  n = n * 2
+}
+while n < 1000
+printf("n = \(n)")
+```
+
+`repeat~while` 반복문은 다른 언어에서 `do~while` 구문에 해당한다.
