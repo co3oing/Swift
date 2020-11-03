@@ -4,9 +4,9 @@
 
 ## 목차
 
-- [Swift 기본 문법](https://github.com/co3oing/Swift/blob/master/Swift01.md)
-- [조건문과 반복문](https://github.com/co3oing/Swift/blob/master/Swift02.md)
-- [배열](https://github.com/co3oing/Swift/blob/master/Swift03.md)
+- [Swift 기본 문법](https://github.com/co3oing/Swift/blob/master/Swift01.%20Swift%20기본%20문법.md)
+- [조건문과 반복문](https://github.com/co3oing/Swift/blob/master/Swift02.%20조건문과%20반복문.md)
+- [배열](https://github.com/co3oing/Swift/blob/master/Swift03.%20배열.md)
 
 ## Reference List
 
