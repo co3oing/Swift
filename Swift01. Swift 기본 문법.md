@@ -1,5 +1,7 @@
 # Swift 기본 문법
 
+
+
 ## Swift 규칙
 
 1. 헤더 파일을 작성할 필요가 없다.
@@ -134,44 +136,6 @@ var capitals = [String: String]()
 ```
 
 타입 뒤에 괄호를 쓰는 것은 생성자(Initializer)를 호출하는 것이다.
-
-## 배열 순회 탐색
-
-배열을 순회 탐색할 때에는 `for~in` 구문을 많이 사용한다.
-
-```swift
-var cities = ["Seoul", "New York", "LA", "Santiago"]
-let length = cities.count // 배열의 길이는 4
-
-for i in 0..<length {
-  print("\(i)번째 배열 원소는 \(cities[i])입니다.")
-}
-```
-
-아이템의 개수가 3개면 배열의 길이도 3이 된다. 스위프트에서 배열의 길이를 구할 때에는 `.count` 를 이용한다.
-
-```swift
-var cities = ["Seoul", "New York", "LA", "Santiago"]
-
-for row in cities {
-  print("배열 원소는 \(row)입니다.")
-}
-```
-
-위는 배열의 순회 특성, 즉 Iterator를 이용하는 방식이다. 
-
-이 방식으론 몇 번째 아이템인지 인덱스를 바로 알기는 어렵다. 이때는 `firstIndex(of:)` 를 사용하면 아이템을 통해 인덱스 값을 역으로 찾을 수 있다.
-
-```swift
-var cities = ["Seoul", "New York", "LA", "Santiago"]
-
-for row in cities {
-  let index = cities.firstIndex(of: row) // 배열의 인덱스를 확인하여 index 상수에 대입
-  print("\(index)번째 배열 원소는 \(row)입니다.")
-}
-```
-
-위와 같이 배열의 아이템을 넣으면 그 아이템이 배열의 몇 번째 인덱스에 저장되어 있는지 알려준다.
 
 ## 산술 연산자 & 범위 연산자
 
