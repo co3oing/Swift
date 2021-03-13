@@ -45,3 +45,48 @@ lec.remainSeats()
 
 Lecture.target
 Lecture.소속학원이름()
+
+
+struct Math {
+    static func abs(value: Int) -> Int {
+        if value > 0 {
+            return value
+        } else {
+            return -value
+        }
+    }
+}
+
+
+Math.abs(value: -20)
+
+
+// 확장
+// 제곱, 반
+extension Math {
+    static func square(value: Int) -> Int {
+        return value * value
+    }
+    
+    static func half(value: Int) -> Int {
+        return value / 2
+    }
+}
+
+
+var value: Int = 10
+
+// 제곱, 반
+// 기능을 추가해서 사용 가능하다.
+extension Int {
+    func square() -> Int {
+        return self * self
+    }
+    
+    func half() -> Int {
+        return self / 2
+    }
+}
+
+value.square()
+value.half()
