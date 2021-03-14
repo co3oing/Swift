@@ -10,11 +10,9 @@
 - [배열](https://github.com/co3oing/Swift/blob/master/Swift03.%20배열.md)
 
 ### [패스트캠퍼스](https://github.com/co3oing/Swift/tree/master/Fast%20campus)
-📁 [Basic](https://github.com/co3oing/Swift/tree/master/Fast%20campus/Basic)
-
-📁 [Structure](https://github.com/co3oing/Swift/tree/master/Fast%20campus/2_Structure)
-
-📁 [Class](https://github.com/co3oing/Swift/tree/master/Fast%20campus/3_Class)
+📁 [Basic](https://github.com/co3oing/Swift/tree/master/Fast%20campus/Basic)</br>
+📁 [Structure](https://github.com/co3oing/Swift/tree/master/Fast%20campus/2_Structure)</br>
+📁 [Class](https://github.com/co3oing/Swift/tree/master/Fast%20campus/3_Class)</br>
 
 - [MyAlbum](https://github.com/co3oing/Swift/tree/master/Fast%20campus/MyAlbum)
 
