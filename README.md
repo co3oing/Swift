@@ -4,13 +4,18 @@
 
 ## 목차
 
-### [패스트캠퍼스](https://github.com/co3oing/Swift/tree/master/Fast%20campus)
-- [MyAlbum](https://github.com/co3oing/Swift/tree/master/Fast%20campus/MyAlbum)
-
 ### 문법
 - [Swift 기본 문법](https://github.com/co3oing/Swift/blob/master/Swift01.%20Swift%20기본%20문법.md)
 - [조건문과 반복문](https://github.com/co3oing/Swift/blob/master/Swift02.%20조건문과%20반복문.md)
 - [배열](https://github.com/co3oing/Swift/blob/master/Swift03.%20배열.md)
+
+### [패스트캠퍼스](https://github.com/co3oing/Swift/tree/master/Fast%20campus)
+📁 [Basic](https://github.com/co3oing/Swift/tree/master/Fast%20campus/Basic)
+- [MyAlbum](https://github.com/co3oing/Swift/tree/master/Fast%20campus/MyAlbum)
+- [1_structure.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/1_structure.swift)
+- [2_structure_challenge.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/2_structure_challenge.swift)
+- [3_properties.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/3_properties.swift)
+- [4_method.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/4_method.swift)
 
 ## Reference List
 
