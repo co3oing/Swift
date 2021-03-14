@@ -11,11 +11,12 @@
 
 ### [패스트캠퍼스](https://github.com/co3oing/Swift/tree/master/Fast%20campus)
 📁 [Basic](https://github.com/co3oing/Swift/tree/master/Fast%20campus/Basic)
+
+📁 [Structure](https://github.com/co3oing/Swift/tree/master/Fast%20campus/2_Structure)
+
+📁 [Class](https://github.com/co3oing/Swift/tree/master/Fast%20campus/3_Class)
+
 - [MyAlbum](https://github.com/co3oing/Swift/tree/master/Fast%20campus/MyAlbum)
-- [1_structure.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/1_structure.swift)
-- [2_structure_challenge.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/2_structure_challenge.swift)
-- [3_properties.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/3_properties.swift)
-- [4_method.swift](https://github.com/co3oing/Swift/blob/master/Fast%20campus/4_method.swift)
 
 ## Reference List
 
