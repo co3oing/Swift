@@ -15,6 +15,7 @@
 📁 [Class](https://github.com/co3oing/Swift/tree/master/Fast%20campus/3_Class)</br>
 
 - [MyAlbum](https://github.com/co3oing/Swift/tree/master/Fast%20campus/MyAlbum)
+- [BountyList](https://github.com/co3oing/Swift/tree/master/Fast%20campus/BountyList)
 
 ## Reference List
 
