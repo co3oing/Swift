@@ -76,20 +76,6 @@ class ListCell: UITableViewCell {
     }
 }
 
-struct BountyInfo {
-    let name: String
-    let bounty: Int
-    
-    var image: UIImage? {
-        return UIImage(named: "\(name).jpg")
-    }
-    
-    init(name: String, bounty: Int) {
-        self.name = name
-        self.bounty = bounty
-    }
-}
-
 class BountyViewModel {
     let bountyInfoList: [BountyInfo] = [
         BountyInfo(name: "brook", bounty: 33000000),
