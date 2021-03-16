@@ -9,6 +9,22 @@ import UIKit
 
 class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    // MVVM
+    
+    // Model
+    // - BountyInfo
+    // > BountyInfo 만들자
+    
+    // View
+    // - ListCell
+    // > ListCell에 필요한 정보를 ViewModel 한테서 받아야겠다.
+    // > ListCell은 ViewModel로 부터 받은 정보로 뷰 업데이트 하기
+    
+    // ViewModel
+    // - BountyViewModel
+    // > BountyViewModel을 만들고, 뷰레이어에서 필요한 메서드 만들기
+    // > 모델 가지고 있기. BountyInfo들
+    
     let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robin", "sanji", "zoro"]
     let bountyList = [33000000, 50,44000000, 300000000, 16000000, 80000000, 77000000, 120000000]
     
