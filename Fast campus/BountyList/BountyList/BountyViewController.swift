@@ -82,9 +82,10 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
 //        cell.bountyLabel.text = "\(bountyList[indexPath.row])"
 //        let bountyInfo = bountyInfoList[indexPath.row]
         let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
-        cell.imageView?.image = bountyInfo.image
-        cell.nameLabel.text = bountyInfo.name
-        cell.bountyLabel.text = "\(bountyInfo.bounty)"
+        cell.update(info: bountyInfo)
+//        cell.imageView?.image = bountyInfo.image
+//        cell.nameLabel.text = bountyInfo.name
+//        cell.bountyLabel.text = "\(bountyInfo.bounty)"
 
         return cell
     }
@@ -101,6 +102,12 @@ class ListCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bountyLabel: UILabel!
+    
+    func update(info: BountyInfo) {
+        imageView?.image = info.image
+        nameLabel.text = info.name
+        bountyLabel.text = "\(info.bounty)"
+    }
 }
 
 struct BountyInfo {
