@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8xU-6y-btN">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="8xU-6y-btN" customClass="GridCell" customModule="BountyList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="axf-Oj-CHB">
@@ -47,24 +47,28 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14Y-Gx-JNz">
-                                                    <rect key="frame" x="20" y="321" width="93" height="21"/>
+                                                    <rect key="frame" x="20" y="320.5" width="93" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="14Y-Gx-JNz" firstAttribute="leading" secondItem="h8s-ug-MVf" secondAttribute="leading" id="2md-Kl-Tje"/>
-                                                <constraint firstItem="h8s-ug-MVf" firstAttribute="leading" secondItem="axf-Oj-CHB" secondAttribute="leading" constant="20" id="AIM-X8-eAK"/>
-                                                <constraint firstItem="14Y-Gx-JNz" firstAttribute="top" secondItem="h8s-ug-MVf" secondAttribute="bottom" constant="4.5" id="XhC-mH-paO"/>
+                                                <constraint firstItem="h8s-ug-MVf" firstAttribute="top" secondItem="Pgd-FU-P39" secondAttribute="bottom" constant="10" id="IHF-yG-QRf"/>
+                                                <constraint firstItem="14Y-Gx-JNz" firstAttribute="top" secondItem="h8s-ug-MVf" secondAttribute="top" constant="25" id="bIB-GS-nct"/>
+                                                <constraint firstItem="14Y-Gx-JNz" firstAttribute="leading" secondItem="h8s-ug-MVf" secondAttribute="leading" id="ePM-nB-FvA"/>
                                                 <constraint firstItem="Pgd-FU-P39" firstAttribute="top" secondItem="axf-Oj-CHB" secondAttribute="top" id="ejR-Cp-Lr5"/>
-                                                <constraint firstItem="h8s-ug-MVf" firstAttribute="top" secondItem="Pgd-FU-P39" secondAttribute="bottom" constant="10" id="gWy-9q-ZU8"/>
                                                 <constraint firstAttribute="trailing" secondItem="Pgd-FU-P39" secondAttribute="trailing" id="pVy-Mw-tj8"/>
+                                                <constraint firstItem="h8s-ug-MVf" firstAttribute="leading" secondItem="axf-Oj-CHB" secondAttribute="leading" constant="20" symbolic="YES" id="pr3-sT-GJ8"/>
                                                 <constraint firstItem="Pgd-FU-P39" firstAttribute="leading" secondItem="axf-Oj-CHB" secondAttribute="leading" id="q3i-u6-Him"/>
-                                                <constraint firstItem="h8s-ug-MVf" firstAttribute="top" secondItem="14Y-Gx-JNz" secondAttribute="bottom" constant="5" id="qEI-gw-Sn3"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="200" height="350"/>
+                                        <connections>
+                                            <outlet property="bountyLabel" destination="14Y-Gx-JNz" id="Ltr-3T-MOd"/>
+                                            <outlet property="imgView" destination="Pgd-FU-P39" id="FCh-Om-Vdd"/>
+                                            <outlet property="nameLabel" destination="h8s-ug-MVf" id="dHc-5V-KsP"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
