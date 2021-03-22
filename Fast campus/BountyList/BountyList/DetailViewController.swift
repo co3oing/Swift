@@ -62,6 +62,8 @@ class DetailViewController: UIViewController {
         UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 2, options: .allowUserInteraction, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+        
+        UIView.transition(with: imgView, duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
     }
     
     func updateUI() {
