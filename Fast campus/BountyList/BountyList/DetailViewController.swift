@@ -52,9 +52,13 @@ class DetailViewController: UIViewController {
         nameLabelCenterX.constant = 0
         bountyLabelCenterX.constant = 0
         
-        UIView.animate(withDuration: 0.3) {
+//        UIView.animate(withDuration: 0.3) {
+//            self.view.layoutIfNeeded()
+//        }
+        
+        UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
             self.view.layoutIfNeeded()
-        }
+        }, completion: nil)
 
     }
     
