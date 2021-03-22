@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.swift
+//  AppDelegate.swift
 //  BountyList
 //
 //  Created by Lucia on 2021/03/22.
