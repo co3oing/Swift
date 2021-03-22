@@ -73,8 +73,11 @@ class DetailViewController: UIViewController {
         
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 2, options: .allowUserInteraction, animations: {
             self.nameLabel.transform = CGAffineTransform.identity
-            self.bountyLabel.transform = CGAffineTransform.identity
             self.nameLabel.alpha = 1
+               }, completion: nil)
+        
+        UIView.animate(withDuration: 1, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 2, options: .allowUserInteraction, animations: {
+            self.bountyLabel.transform = CGAffineTransform.identity
             self.bountyLabel.alpha = 1
                }, completion: nil)
             
