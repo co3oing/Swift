@@ -28,7 +28,6 @@
 		948C956923CA1C7E001642F9 /* Moonlight!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955323CA1C7E001642F9 /* Moonlight!.mp3 */; };
 		948C956A23CA1C7E001642F9 /* Getsomerest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955423CA1C7E001642F9 /* Getsomerest.mp3 */; };
 		948C956B23CA1C7E001642F9 /* night calls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955523CA1C7E001642F9 /* night calls.mp3 */; };
-		948C956C23CA1C7E001642F9 /* Ocean ride __ 海の乗り.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955623CA1C7E001642F9 /* Ocean ride __ 海の乗り.mp3 */; };
 		948C956D23CA1C7E001642F9 /* Missing U In The Raining Day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955723CA1C7E001642F9 /* Missing U In The Raining Day.mp3 */; };
 		948C956E23CA1C7E001642F9 /* Glow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955823CA1C7E001642F9 /* Glow.mp3 */; };
 		948C956F23CA1C7E001642F9 /* Chamomile Tea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 948C955923CA1C7E001642F9 /* Chamomile Tea.mp3 */; };
@@ -70,7 +69,6 @@
 		948C955323CA1C7E001642F9 /* Moonlight!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Moonlight!.mp3"; sourceTree = "<group>"; };
 		948C955423CA1C7E001642F9 /* Getsomerest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Getsomerest.mp3; sourceTree = "<group>"; };
 		948C955523CA1C7E001642F9 /* night calls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "night calls.mp3"; sourceTree = "<group>"; };
-		948C955623CA1C7E001642F9 /* Ocean ride __ 海の乗り.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ocean ride __ 海の乗り.mp3"; sourceTree = "<group>"; };
 		948C955723CA1C7E001642F9 /* Missing U In The Raining Day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Missing U In The Raining Day.mp3"; sourceTree = "<group>"; };
 		948C955823CA1C7E001642F9 /* Glow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Glow.mp3; sourceTree = "<group>"; };
 		948C955923CA1C7E001642F9 /* Chamomile Tea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Chamomile Tea.mp3"; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				948C955323CA1C7E001642F9 /* Moonlight!.mp3 */,
 				948C955423CA1C7E001642F9 /* Getsomerest.mp3 */,
 				948C955523CA1C7E001642F9 /* night calls.mp3 */,
-				948C955623CA1C7E001642F9 /* Ocean ride __ 海の乗り.mp3 */,
 				948C955723CA1C7E001642F9 /* Missing U In The Raining Day.mp3 */,
 				948C955823CA1C7E001642F9 /* Glow.mp3 */,
 				948C955923CA1C7E001642F9 /* Chamomile Tea.mp3 */,
@@ -227,7 +224,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = com.joonwon;
 				TargetAttributes = {
 					948C951423C9AAF5001642F9 = {
@@ -262,7 +259,6 @@
 				948C956523CA1C7E001642F9 /* Bike Rides On The Block.mp3 in Resources */,
 				948C957023CA1C7E001642F9 /* [ asleep ].mp3 in Resources */,
 				948C956623CA1C7E001642F9 /* Letting Go.mp3 in Resources */,
-				948C956C23CA1C7E001642F9 /* Ocean ride __ 海の乗り.mp3 in Resources */,
 				948C957723CA2AEF001642F9 /* Player.storyboard in Resources */,
 				948C956123CA1C7E001642F9 /* im trying to find myself.mp3 in Resources */,
 				948C956223CA1C7E001642F9 /* when the leaves start falling.mp3 in Resources */,
@@ -356,6 +352,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,6 +413,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
