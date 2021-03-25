@@ -17,11 +17,30 @@ class TrackManager {
     
     // TODO: 생성자 정의하기
     init() {
+        let tracks = loadTracks()
+        self.tracks = tracks
+        self.albums = loadAlbums(tracks: tracks)
+        self.todaysTrack = self.tracks.randomElement()
     }
 
     // TODO: 트랙 로드하기
     func loadTracks() -> [AVPlayerItem] {
-        return []
+        // 파일들 읽어서 AVPlayerItem 만들기
+        let urls = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: nil) ?? []
+        
+//        var items: [AVPlayerItem] = []
+//        for url in urls {
+//            let item = AVPlayerItem(url: url)
+//            items.append(item)
+//        }
+        
+//        let items = urls.map { url in
+//            return AVPlayerItem(url: url)
+//        }
+        
+        let items = urls.map { AVPlayerItem(url: $0) }
+        
+        return items
     }
     
     // TODO: 인덱스에 맞는 트랙 로드하기
