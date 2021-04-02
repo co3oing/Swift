@@ -69,7 +69,10 @@ class PlayerViewController: UIViewController {
 extension PlayerViewController {
     func updateTrackInfo() {
         // TODO: 트랙 정보 업데이트
-        
+        guard let track = simplePlayer.currentItem?.convertToTrack() else { return }
+        thumbnailImageView.image = track.artwork
+        titleLabel.text = track.title
+        artistLabel.text = track.artist
     }
     
     func updateTintColor() {
