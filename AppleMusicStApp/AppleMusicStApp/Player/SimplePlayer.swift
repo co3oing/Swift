@@ -10,7 +10,7 @@ import AVFoundation
 
 class SimplePlayer {
     // TODO: 싱글톤 만들기, 왜 만드는가?
-    
+    static let shared = SimplePlayer()
     
     private let player = AVPlayer()
 
