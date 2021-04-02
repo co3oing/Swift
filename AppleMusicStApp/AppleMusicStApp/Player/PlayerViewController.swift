@@ -47,7 +47,8 @@ class PlayerViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // TODO: 뷰나갈때 처리 > 심플플레이어
-        
+        simplePlayer.pause()
+        simplePlayer.replaceCurrentItem(with: nil)
     }
     
     @IBAction func beginDrag(_ sender: UISlider) {
