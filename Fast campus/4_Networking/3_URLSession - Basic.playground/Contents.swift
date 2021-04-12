@@ -41,7 +41,7 @@ let dataTask = session.dataTask(with: requestURL) { (data, response, error) in
     guard let resultData = data else { return }
     let resultString = String(data: resultData, encoding: .utf8)
     
-    print("---> result : \(resultString!)")
+     print("---> result : \(resultString!)")
 }
 
 dataTask.resume()
