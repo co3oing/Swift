@@ -37,8 +37,9 @@ extension SearchViewController: UISearchBarDelegate {
         // - 결과를 받아올 모델 Movie, Response
         // - 결과를 받아와서, CollectionView로 표현
         
-        SearchAPI.search(searchTerm) { movie in
+        SearchAPI.search(searchTerm) { movies in
             // collectionView로 표현하기
+            print("--> count: \(movies.count), \(movies.first?.title)")
         }
         
         print("--> 검색어: \(searchTerm)")
@@ -48,7 +49,6 @@ extension SearchViewController: UISearchBarDelegate {
 class SearchAPI {
     static func search(_ term: String, completion: @escaping ([Movie]) -> Void) {
         let session = URLSession(configuration: .default)
-        
         var urlComponents = URLComponents(string: "https://itunes.apple.com/search?")!
         let mediaQuery = URLQueryItem(name: "media", value: "movie")
         let entityQuery = URLQueryItem(name: "entity", value: "movie")
@@ -56,6 +56,7 @@ class SearchAPI {
         urlComponents.queryItems?.append(mediaQuery)
         urlComponents.queryItems?.append(entityQuery)
         urlComponents.queryItems?.append(termQuery)
+        
         let requestURL = urlComponents.url!
         
         let dataTask = session.dataTask(with: requestURL) { data, response, error in
@@ -72,15 +73,23 @@ class SearchAPI {
                 completion([])
                 return
             }
-            
-            // data -> [Movie]
-            let string = String(data: resultData, encoding: .utf8)
-            print("--> 검색어: \(string)")
 
-            
-//            completion([Movie])
+            let movies = SearchAPI.parseMovies(resultData)
+            completion(movies)
         }
         dataTask.resume()
+    }
+    
+    static func parseMovies(_ data: Data) -> [Movie] {
+        let decoder = JSONDecoder()
+        do {
+            let response = try decoder.decode(Response.self, from: data)
+            let movies = response.movies
+            return movies
+        } catch let error {
+            print("--> parsing error: \(error.localizedDescription)")
+            return []
+        }
     }
 }
 
@@ -88,9 +97,22 @@ struct Response: Codable {
     let resultCount: Int
     let movies: [Movie]
     
-    
+    enum CodingKeys: String, CodingKey {
+        case resultCount
+        case movies = "results"
+    }
 }
 
 struct Movie: Codable {
+    let title: String
+    let director: String
+    let thumbnailPath: String
+    let previewURL: String
     
+    enum CodingKeys: String, CodingKey {
+        case title = "trackName"
+        case director = "artistName"
+        case thumbnailPath = "artworkUrl100"
+        case previewURL = "previewUrl"
+    }
 }
