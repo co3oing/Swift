@@ -9,7 +9,11 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
-
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscapeRight
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
