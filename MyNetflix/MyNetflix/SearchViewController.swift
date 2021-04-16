@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
@@ -31,7 +32,11 @@ extension SearchViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ResultCell", for: indexPath) as? ResultCell else {
             return UICollectionViewCell()
         }
-        cell.backgroundColor = .red
+        
+        let movie = movies[indexPath.item]
+        let url = URL(string: movie.thumbnailPath)!
+        cell.movieThumbnail.kf.setImage(with: url)
+        
         return cell
     }
 }
@@ -71,13 +76,15 @@ extension SearchViewController: UISearchBarDelegate {
         // - 목표 : 서치텀을 가지고 네트워킹을 통해서 영화 검색
         // - [v] 검색API 가 필요
         // - [v] 결과를 받아올 모델 Movie, Response
-        // - 결과를 받아와서, CollectionView로 표현
+        // - [v] 결과를 받아와서, CollectionView로 표현
         
         SearchAPI.search(searchTerm) { movies in
             // collectionView로 표현하기
             print("--> count: \(movies.count), \(movies.first?.title)")
-            self.movies = movies
-            self.resultCollectionView.reloadData()
+            DispatchQueue.main.async {
+                self.movies = movies
+                self.resultCollectionView.reloadData()
+            }
         }
         
         print("--> 검색어: \(searchTerm)")
