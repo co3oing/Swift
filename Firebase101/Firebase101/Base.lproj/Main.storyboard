@@ -17,8 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first Data!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-tw-Z2p">
-                                <rect key="frame" x="165" y="96" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="136" y="96" width="142.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Customers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brv-vO-UPQ">
+                                <rect key="frame" x="107.5" y="179" width="199" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,12 +32,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="brv-vO-UPQ" firstAttribute="top" secondItem="9HK-tw-Z2p" secondAttribute="bottom" constant="47" id="3j7-oG-IYn"/>
                             <constraint firstItem="9HK-tw-Z2p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="97A-Nw-0Ld"/>
+                            <constraint firstItem="brv-vO-UPQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ibz-4J-pZs"/>
                             <constraint firstItem="9HK-tw-Z2p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="p9a-Oo-ONh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="9HK-tw-Z2p" id="z6U-vS-ejM"/>
+                        <outlet property="numOfCustomers" destination="brv-vO-UPQ" id="clf-q9-jhg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
