@@ -246,7 +246,7 @@
         <!--공개예정-->
         <scene sceneID="ryf-ci-vYK">
             <objects>
-                <viewController id="Blf-Or-i5j" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpComingViewController" id="Blf-Or-i5j" customClass="UpComingViewController" customModule="MyNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ce7-Bh-AkS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +277,7 @@
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-cH-afS">
-                                                        <rect key="frame" x="0.0" y="272" width="382" height="200"/>
+                                                        <rect key="frame" x="0.0" y="200" width="382" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="s0T-a0-106"/>
                                                         </constraints>
