@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var numOfCustomers: UILabel!
     let db = Database.database().reference()
     
+    var customers: [Customer] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabel()
-//        saveBasicTypes()
-//        saveCustomers()
+        saveBasicTypes()
         fetchCustomers()
+//        updateBasicTypes()
+//        deleteBasicTypes()
     }
     
     func updateLabel() {
@@ -32,6 +35,34 @@ class ViewController: UIViewController {
                 self.dataLabel.text = value
             }
         }
+    }
+    
+    @IBAction func createCustomer(_ sender: Any) {
+        saveCustomers()
+    }
+    
+    @IBAction func fetchCustomer(_ sender: Any) {
+        fetchCustomers()
+    }
+    
+    func updateCustomers() {
+        guard customers.isEmpty == false else { return }
+        customers[0].name = "Min"
+        
+        let dictionary = customers.map { $0.toDictionary }
+        db.updateChildValues(["customers": dictionary])
+    }
+    
+    @IBAction func updateCustomer(_ sender: Any) {
+        updateCustomers()
+    }
+    
+    func deleteCustomers() {
+        db.child("customers").removeValue()
+    }
+    
+    @IBAction func deleteCustomer(_ sender: Any) {
+        deleteCustomers()
     }
 }
 
@@ -73,6 +104,7 @@ extension ViewController {
                 let data = try JSONSerialization.data(withJSONObject: snapshot.value, options: [])
                 let decoder = JSONDecoder()
                 let customers: [Customer] = try decoder.decode([Customer].self, from: data)
+                self.customers = customers
                 DispatchQueue.main.async {
                     self.numOfCustomers.text = "# of Customers: \(customers.count)"
                 }
@@ -83,9 +115,24 @@ extension ViewController {
     }
 }
 
+extension ViewController {
+    func updateBasicTypes() {
+//        db.child("int").setValue(3)
+//        db.child("double").setValue(3.5)
+//        db.child("string").setValue("string value : hi!")
+        db.updateChildValues(["int": 6])
+    }
+    
+    func deleteBasicTypes() {
+        db.child("int").removeValue()
+        db.child("double").removeValue()
+        db.child("string").removeValue()
+    }
+}
+
 struct Customer: Codable {
     let id: String
-    let name: String
+    var name: String
     let books: [Book]
     
     var toDictionary: [String: Any] {
