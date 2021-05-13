@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8516B5CA264A7A00007C67E2 /* UpComingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516B5C9264A7A00007C67E2 /* UpComingViewController.swift */; };
 		852F9EA5264CFB0700701FA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 852F9EA4264CFB0700701FA0 /* GoogleService-Info.plist */; };
+		852F9EA7264CFDC400701FA0 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F9EA6264CFDC400701FA0 /* HistoryViewController.swift */; };
 		8597250C26291A31005AB9B3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8597250B26291A31005AB9B3 /* Kingfisher */; };
 		9409834F243468AA00FD1040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9409834E243468AA00FD1040 /* AppDelegate.swift */; };
 		94098351243468AA00FD1040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94098350243468AA00FD1040 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 		3EDE849B6A9F8F61A0371DFC /* Pods-MyNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNetflix.debug.xcconfig"; path = "Target Support Files/Pods-MyNetflix/Pods-MyNetflix.debug.xcconfig"; sourceTree = "<group>"; };
 		8516B5C9264A7A00007C67E2 /* UpComingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingViewController.swift; sourceTree = "<group>"; };
 		852F9EA4264CFB0700701FA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		852F9EA6264CFDC400701FA0 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9409834B243468AA00FD1040 /* MyNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9409834E243468AA00FD1040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94098350243468AA00FD1040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				94DFD7542435DA88009687ED /* SearchViewController.swift */,
 				94DFD7522435CED7009687ED /* RecommendListViewController.swift */,
 				94098354243468AA00FD1040 /* Main.storyboard */,
+				852F9EA6264CFDC400701FA0 /* HistoryViewController.swift */,
 				8516B5C9264A7A00007C67E2 /* UpComingViewController.swift */,
 				94098366243469D700FD1040 /* Player.storyboard */,
 				940983642434693600FD1040 /* PlayerViewController.swift */,
@@ -257,6 +260,7 @@
 				94098353243468AA00FD1040 /* AppTabbarController.swift in Sources */,
 				94DFD7552435DA88009687ED /* SearchViewController.swift in Sources */,
 				94DFD7812436F11B009687ED /* PlayerView.swift in Sources */,
+				852F9EA7264CFDC400701FA0 /* HistoryViewController.swift in Sources */,
 				9409834F243468AA00FD1040 /* AppDelegate.swift in Sources */,
 				8516B5CA264A7A00007C67E2 /* UpComingViewController.swift in Sources */,
 				94098351243468AA00FD1040 /* SceneDelegate.swift in Sources */,
