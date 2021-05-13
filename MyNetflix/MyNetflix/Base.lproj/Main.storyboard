@@ -273,7 +273,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="xh3-2U-mYW"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="cXF-Sf-bPn" kind="embed" id="90f-QD-PI7"/>
+                                                            <segue destination="cXF-Sf-bPn" kind="embed" identifier="award" id="90f-QD-PI7"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-cH-afS">
@@ -282,7 +282,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="s0T-a0-106"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="bRo-3A-EBa" kind="embed" id="5Bd-eq-6tf"/>
+                                                            <segue destination="bRo-3A-EBa" kind="embed" identifier="hot" id="5Bd-eq-6tf"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
@@ -631,6 +631,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rrr-5W-ykA"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Yb7-tG-YDE" secondAttribute="bottom" constant="6" id="BCG-IT-xMT"/>
@@ -703,6 +704,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="lg4-Dp-2gY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Nhw-9G-SPN" secondAttribute="trailing" id="278-l4-NG2"/>
