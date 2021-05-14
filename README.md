@@ -8,10 +8,12 @@
 - [배열](https://github.com/co3oing/Swift/blob/master/Swift03.%20배열.md)
 
 ## 패스트캠퍼스
--  MyAlbum
 -  BountyList
 -  AppleMusicStApp
 -  TodoList
+-  MyNetfilx
+-  Firebase101
+-  FullScreenCamera
 - 📁 Fast campus
   - 📁 Basic
   - 📁 Structure
