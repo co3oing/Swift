@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Photos
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // TODO: 초기 설정 1
     // - captureSession
     // - AVCaptureDeviceInput
@@ -106,6 +106,8 @@ class CameraViewController: UIViewController {
         }
     }
     
+    
+    
     func updateSwitchCameraIcon(position: AVCaptureDevice.Position) {
         // TODO: Update ICON
         switch position {
@@ -133,6 +135,16 @@ class CameraViewController: UIViewController {
         }
     }
     
+    // MARK: Photo Library
+    let imagePicker = UIImagePickerController()
+    @IBAction func showPhotoLibrary(_ sender: UIButton) {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        self.present(self.imagePicker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+    }
     
     func savePhotoLibrary(image: UIImage) {
         // TODO: capture한 이미지 포토라이브러리에 저장
@@ -198,7 +210,6 @@ extension CameraViewController {
         
         captureSession.commitConfiguration()
     }
-    
     
     
     func startSession() {
