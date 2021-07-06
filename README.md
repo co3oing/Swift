@@ -19,8 +19,6 @@
 - nil : '없음'을 의미하는 키워드
 
 ### 가변 매개변수
-- 전달 받을 값의 개수를 알기 어려울 때 사용한다.
-- 함수당 하나만 가질 수 있다.
 ```swift
 func sayHelloToFreinds(me: String, freinds: String...) -> String {
   return "Hello \(freinds)! I'm \(me)!"
@@ -31,6 +29,8 @@ print(sayHelloToFriends(me: "JA", freinds: "A", "B", "C"))
 print(sayHelloToFriends(me: "JA"))
 // Hello []! I'm JA
 ```
+- 전달 받을 값의 개수를 알기 어려울 때 사용한다.
+- 함수당 하나만 가질 수 있다.
 
 ### 옵셔널
 - !를 이용한 암시적 추출 옵셔널
@@ -59,9 +59,6 @@ print(sayHelloToFriends(me: "JA"))
   ```
   
 ### 옵셔널 바인딩
-1. nil 체크 + 안전한 추출
-2. 옵셔널 안에 값이 들어있는지 확인하고 값이 있으면 값 꺼내기
-3. if-let
 ```swift
 func printName(_ name: String) {
   print(name)
@@ -74,6 +71,58 @@ if let name: String = myName, let freind = yourName {
   printName("\(name) and \(freind)")
 }
 ```
+1. nil 체크 + 안전한 추출
+2. 옵셔널 안에 값이 들어있는지 확인하고 값이 있으면 값 꺼내기
+3. if-let
+
+### 구조체, 클래스, 열거형
+- 구조체(struct)
+  - 값(value) 타입
+- 클래스(class)
+  - 참조(reference) 타입
+  - 상속이 가능하지만 다중 상속은 되지 않는다.
+- 열거형(enum)
+  - 각 case는 그 자체가 고유의 값
+  - rawValue를 가질 수 있다.
+
+### 클로저
+```swift
+// 기본 클로저
+result = caclulate(a: 10, b: 10, method: {(left: Int, right: Int) -> Int in
+  return left + right
+})
+
+// 축약된 클로저
+result = caclulate(a: 10, b: 10) { $0 + $1 }
+```
+- 실행가능한 코드 블럭
+- 클로저의 표현
+  1. 후행 클로저
+  2. 반환타입 생략
+  3. 단축 인자 이름
+  4. 암시적 반환 표현
+
+### 프로퍼티 옵저버
+```swift
+class StepCounter {
+  var totalSteps: Int = 0 {
+    willSet(newTotalSteps) {
+      print("About to setTotalSteps to \(newtotalSteps)")
+    }
+    didSet {
+      if totalSteps > oldValue {
+        print("Added \(totalSteps - oldValue) steps")
+      }
+    }
+  }
+}
+```
+- willSet
+  - 값이 변경되기 직전에 호출된다.
+  - newValue 사용 가능
+- didSet
+  - 값이 변경된 직후에 호출된다.
+  - oldValue 사용 가능
 
 ## Reference List
 - 꼼꼼한 재은씨의 Swift : 문법편
